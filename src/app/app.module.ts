@@ -18,6 +18,11 @@ import { HomeBdes1Component } from './home-bdes1/home-bdes1.component';
 import { HomeBdes2Component } from './home-bdes2/home-bdes2.component';
 import { HomeBdes3Component } from './home-bdes3/home-bdes3.component';
 import { HomeBdes4Component } from './home-bdes4/home-bdes4.component';
+import { ContactDianaComponent } from './contact-diana/contact-diana.component';
+import { ContactAndresComponent } from './contact-andres/contact-andres.component';
+import { ContactSebastianComponent } from './contact-sebastian/contact-sebastian.component';
+import { ContactCristianComponent } from './contact-cristian/contact-cristian.component';
+import { ContactJohnComponent } from './contact-john/contact-john.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +40,12 @@ import { HomeBdes4Component } from './home-bdes4/home-bdes4.component';
     HomeBdes1Component,
     HomeBdes2Component,
     HomeBdes3Component,
-    HomeBdes4Component
+    HomeBdes4Component,
+    ContactDianaComponent,
+    ContactAndresComponent,
+    ContactSebastianComponent,
+    ContactCristianComponent,
+    ContactJohnComponent
   ],
   imports: [
     BrowserModule,
