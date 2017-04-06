@@ -23,6 +23,8 @@ import { ContactAndresComponent } from './contact-andres/contact-andres.componen
 import { ContactSebastianComponent } from './contact-sebastian/contact-sebastian.component';
 import { ContactCristianComponent } from './contact-cristian/contact-cristian.component';
 import { ContactJohnComponent } from './contact-john/contact-john.component';
+import { ContactBackendComponent } from './contact-backend/contact-backend.component';
+import { ContactFrontendComponent } from './contact-frontend/contact-frontend.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,9 @@ import { ContactJohnComponent } from './contact-john/contact-john.component';
     ContactAndresComponent,
     ContactSebastianComponent,
     ContactCristianComponent,
-    ContactJohnComponent
+    ContactJohnComponent,
+    ContactBackendComponent,
+    ContactFrontendComponent
   ],
   imports: [
     BrowserModule,
