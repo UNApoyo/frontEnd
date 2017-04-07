@@ -26,6 +26,11 @@ import { ContactJohnComponent } from './contact-john/contact-john.component';
 import { ContactBackendComponent } from './contact-backend/contact-backend.component';
 import { ContactFrontendComponent } from './contact-frontend/contact-frontend.component';
 import { HomeBcontactoComponent } from './home-bcontacto/home-bcontacto.component';
+import { HistoriaComponent } from './historia/historia.component';
+import { HistBaconsejameComponent } from './hist-baconsejame/hist-baconsejame.component';
+import { HistBvolverComponent } from './hist-bvolver/hist-bvolver.component';
+import { HistTextboxComponent } from './hist-textbox/hist-textbox.component';
+import { HistDescriptionComponent } from './hist-description/hist-description.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +56,12 @@ import { HomeBcontactoComponent } from './home-bcontacto/home-bcontacto.componen
     ContactJohnComponent,
     ContactBackendComponent,
     ContactFrontendComponent,
-    HomeBcontactoComponent
+    HomeBcontactoComponent,
+    HistoriaComponent,
+    HistBaconsejameComponent,
+    HistBvolverComponent,
+    HistTextboxComponent,
+    HistDescriptionComponent
   ],
   imports: [
     BrowserModule,
