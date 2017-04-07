@@ -25,6 +25,7 @@ import { ContactCristianComponent } from './contact-cristian/contact-cristian.co
 import { ContactJohnComponent } from './contact-john/contact-john.component';
 import { ContactBackendComponent } from './contact-backend/contact-backend.component';
 import { ContactFrontendComponent } from './contact-frontend/contact-frontend.component';
+import { HomeBcontactoComponent } from './home-bcontacto/home-bcontacto.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { ContactFrontendComponent } from './contact-frontend/contact-frontend.co
     ContactCristianComponent,
     ContactJohnComponent,
     ContactBackendComponent,
-    ContactFrontendComponent
+    ContactFrontendComponent,
+    HomeBcontactoComponent
   ],
   imports: [
     BrowserModule,
