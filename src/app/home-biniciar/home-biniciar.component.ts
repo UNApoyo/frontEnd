@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeBIniciarComponent implements OnInit {
 
+
+
   constructor() { }
 
   ngOnInit() {
