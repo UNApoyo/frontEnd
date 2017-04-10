@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contactenos.component.css']
 })
 export class ContactenosComponent implements OnInit {
-
+  hideElement: true;
+  
   constructor() { }
 
   ngOnInit() {
