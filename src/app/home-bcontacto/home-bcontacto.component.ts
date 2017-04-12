@@ -1,12 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NgModule } from "@angular/core";
-import { RouterModule, Routes} from "@angular/router";
-
-import { ContactenosComponent } from "../contactenos/contactenos.component";
-
-const contactRoute: Routes = [
-  { path: 'contact', component: ContactenosComponent}
-];
 
 @Component({
   selector: 'app-home-bcontacto',
@@ -15,11 +7,6 @@ const contactRoute: Routes = [
 
 })
 
-@NgModule({
-  imports:[
-    RouterModule.forRoot(contactRoute)
-  ]
-})
 
 export class HomeBcontactoComponent implements OnInit {
 

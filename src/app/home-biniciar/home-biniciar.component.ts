@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-home-biniciar',
   templateUrl: './home-biniciar.component.html',

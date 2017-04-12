@@ -36,7 +36,10 @@ import { HistDescriptionComponent } from './hist-description/hist-description.co
 
 const appRoutes: Routes = [
   { path: 'Home', component: HomeComponent},
+  { path: 'Contact', component: ContactenosComponent},
+  { path: 'Historia', component: HistoriaComponent},
   { path: '', redirectTo: '/Home', pathMatch:'full'}
+
 ];
 
 
