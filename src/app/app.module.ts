@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { RouterModule, Routes } from "@angular/router";
+
 
 import { AppComponent } from './app.component';
 import { HomeTitleComponent } from './home-title/home-title.component';
@@ -31,6 +33,20 @@ import { HistBaconsejameComponent } from './hist-baconsejame/hist-baconsejame.co
 import { HistBvolverComponent } from './hist-bvolver/hist-bvolver.component';
 import { HistTextboxComponent } from './hist-textbox/hist-textbox.component';
 import { HistDescriptionComponent } from './hist-description/hist-description.component';
+import { ResultsComponent } from './results/results.component';
+import { ResultsBterminarComponent } from './results-bterminar/results-bterminar.component';
+import { ResultsTabComponent } from './results-tab/results-tab.component';
+
+
+const appRoutes: Routes = [
+  { path: 'Home', component: HomeComponent},
+  { path: 'Contact', component: ContactenosComponent},
+  { path: 'Historia', component: HistoriaComponent},
+  {	path: 'Results', component: ResultsComponent},
+  { path: '', redirectTo: '/Home', pathMatch:'full'}
+
+];
+
 
 @NgModule({
   declarations: [
@@ -66,7 +82,8 @@ import { HistDescriptionComponent } from './hist-description/hist-description.co
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
