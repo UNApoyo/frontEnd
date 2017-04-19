@@ -1,10 +1,13 @@
 body {font-family: "Lato", sans-serif;}
 
 /* Style the tab */
+h3{
+  color: #FFFFFF;
+}
 div.tab {
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    background-color: #dad7d9;
 }
 
 /* Style the buttons inside the tab */
