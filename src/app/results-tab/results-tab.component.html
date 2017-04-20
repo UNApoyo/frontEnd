@@ -1,105 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-body {font-family: "Lato", sans-serif;}
-
-/* Style the tab */
-div.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-}
-
-/* Style the buttons inside the tab */
-div.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-div.tab button:hover {
-    background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-div.tab button.active {
-    background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    -webkit-animation: fadeEffect 1s;
-    animation: fadeEffect 1s;
-}
-
-/* Fade in tabs */
-@-webkit-keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-</style>
-</head>
-<body>
-
 <h3>Resultados</h3>
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Recomendacion')">Recomendacion General</button>
-  <button class="tablinks" onclick="openCity(event, 'Grado')">Opciones de Grado</button>
-  <button class="tablinks" onclick="openCity(event, 'Enfoque')">Enfoque</button>
-  <button class="tablinks" onclick="openCity(event, 'Info')">Informacion General</button>
+  <button class="tablinks" onclick="openTab(event, 'Recomendacion')" id="defaultOpen">Recomendacion General</button>
+  <button class="tablinks" onclick="openTab(event, 'Grado')">Opciones de Grado</button>
+  <button class="tablinks" onclick="openTab(event, 'Enfoque')">Enfoque</button>
+  <button class="tablinks" onclick="openTab(event, 'Info')">Informacion General</button>
 </div>
 
 <div id="Recomendacion" class="tabcontent">
-  <h3>Recomendacion</h3>
-  <p>Tu porcentaje de carrera es: "porcentaje".</p>
-  <p>Por ello y segun tu rendimiento te recomendamos:</p>
+  <app-results-trecomendacion></app-results-trecomendacion>
 </div>
 
 <div id="Grado" class="tabcontent">
-  <h3>Grado</h3>
-  <p>Tesis, pasantia, MAPI, etc.</p> 
+  <app-results-tgrado></app-results-tgrado>
 </div>
 
 <div id="Enfoque" class="tabcontent">
-  <h3>Enfoque</h3>
-  <p>Dependiendo del rendimiento, que enfoque tomar (si dispone de creditos y/o porcentaje).</p>
+  <app-results-tenfoque></app-results-tenfoque>
 </div>
 
 <div id="Info" class="tabcontent">
-  <h3>Informacion</h3>
-  <p>Informacion detallada de que porcentaje de fundamentacion, disciplinar y electivas lleva, ademas estadisticas de rendimiento.</p>
+  <app-results-tinfo></app-results-tinfo>
 </div>
-
-<script>
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-</script>
-     
-</body>
-</html> 
+<script src="../js/tab.js"></script>

@@ -36,13 +36,17 @@ import { HistDescriptionComponent } from './hist-description/hist-description.co
 import { ResultsComponent } from './results/results.component';
 import { ResultsBterminarComponent } from './results-bterminar/results-bterminar.component';
 import { ResultsTabComponent } from './results-tab/results-tab.component';
+import { ResultsTrecomendacionComponent } from './results-trecomendacion/results-trecomendacion.component';
+import { ResultsTgradoComponent } from './results-tgrado/results-tgrado.component';
+import { ResultsTenfoqueComponent } from './results-tenfoque/results-tenfoque.component';
+import { ResultsTinfoComponent } from './results-tinfo/results-tinfo.component';
 
 
 const appRoutes: Routes = [
   { path: 'Home', component: HomeComponent},
   { path: 'Contact', component: ContactenosComponent},
   { path: 'Historia', component: HistoriaComponent},
-  {	path: 'Results', component: ResultsComponent},
+  { path: 'Results', component: ResultsComponent},
   { path: '', redirectTo: '/Home', pathMatch:'full'}
 
 ];
@@ -77,7 +81,14 @@ const appRoutes: Routes = [
     HistBaconsejameComponent,
     HistBvolverComponent,
     HistTextboxComponent,
-    HistDescriptionComponent
+    HistDescriptionComponent,
+    ResultsComponent,
+    ResultsBterminarComponent,
+    ResultsTabComponent,
+    ResultsTrecomendacionComponent,
+    ResultsTgradoComponent,
+    ResultsTenfoqueComponent,
+    ResultsTinfoComponent
   ],
   imports: [
     BrowserModule,
