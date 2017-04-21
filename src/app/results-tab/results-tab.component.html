@@ -1,26 +1,28 @@
 <h3>Resultados</h3>
+<div class="main">
+  <input id="tab1" type="radio" name="tabs" checked>
+  <label for="tab1">Recomendacion General</label>
 
-<div class="tab">
-  <button class="tablinks" onclick="openTab(event, 'Recomendacion')" id="defaultOpen">Recomendacion General</button>
-  <button class="tablinks" onclick="openTab(event, 'Grado')">Opciones de Grado</button>
-  <button class="tablinks" onclick="openTab(event, 'Enfoque')">Enfoque</button>
-  <button class="tablinks" onclick="openTab(event, 'Info')">Informacion General</button>
+  <input id="tab2" type="radio" name="tabs">
+  <label for="tab2">Grado</label>
+
+  <input id="tab3" type="radio" name="tabs">
+  <label for="tab3">Enfoque</label>
+
+  <input id="tab4" type="radio" name="tabs">
+  <label for="tab4">Informacion</label>
+    <div class="content">
+      <div id="content1">
+        <app-results-trecomendacion></app-results-trecomendacion>
+			</div>
+      <div id="content2">
+         <app-results-tgrado></app-results-tgrado>
+			</div>
+      <div id="content3">
+        <app-results-tenfoque></app-results-tenfoque>
+			</div>
+      <div id="content4">
+        <app-results-tinfo></app-results-tinfo>
+			</div>
+    </div>
 </div>
-
-<div id="Recomendacion" class="tabcontent">
-  <app-results-trecomendacion></app-results-trecomendacion>
-</div>
-
-<div id="Grado" class="tabcontent">
-  <app-results-tgrado></app-results-tgrado>
-</div>
-
-<div id="Enfoque" class="tabcontent">
-  <app-results-tenfoque></app-results-tenfoque>
-</div>
-
-<div id="Info" class="tabcontent">
-  <app-results-tinfo></app-results-tinfo>
-</div>
-
-<script src="../js/tab.js"></script>
