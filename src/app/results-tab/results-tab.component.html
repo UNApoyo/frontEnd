@@ -1,0 +1,24 @@
+<h3>Resultados</h3>
+
+<div class="tab" background=transparent ng-init="var = 1">
+  <button ng-click="var = 1" >Recomendacion General</button>
+  <button ng-click="var = 2">Opciones de Grado</button>
+  <button ng-click="var = 3">Enfoque</button>
+  <button ng-click="var = 4">Informacion General</button>
+</div>
+
+<div ng-if="var == 1">
+  <app-results-trecomendacion></app-results-trecomendacion>
+</div>
+
+<div ng-if="var == 2">
+  <app-results-tgrado></app-results-tgrado>
+</div>
+
+<div ng-if="var == 3">
+  <app-results-tenfoque></app-results-tenfoque>
+</div>
+
+<div ng-if="var == 4">
+  <app-results-tinfo></app-results-tinfo>
+</div>
