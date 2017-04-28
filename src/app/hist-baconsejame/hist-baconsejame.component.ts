@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-hist-baconsejame',
   templateUrl: './hist-baconsejame.component.html',

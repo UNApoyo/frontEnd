@@ -52,6 +52,15 @@ const appRoutes: Routes = [
 ];
 
 
+const appRoutes: Routes = [
+  { path: 'Home', component: HomeComponent},
+  { path: 'Contact', component: ContactenosComponent},
+  { path: 'Historia', component: HistoriaComponent},
+  { path: '', redirectTo: '/Home', pathMatch:'full'}
+
+];
+
+
 @NgModule({
   declarations: [
     AppComponent,

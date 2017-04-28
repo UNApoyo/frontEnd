@@ -23,4 +23,4 @@ input:checked + label {background: #604040; color: #fff;}
   display: block;
 }
 
-   @media screen and (max-width: 400px) { label {padding: 15px 10px;} }
+@media screen and (max-width: 400px) { label {padding: 15px 10px;} }
