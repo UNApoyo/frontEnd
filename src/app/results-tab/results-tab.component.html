@@ -1,24 +1,28 @@
 <h3>Resultados</h3>
+<div class="main">
+  <input id="tab1" type="radio" name="tabs" checked>
+  <label for="tab1">Recomendacion General</label>
 
-<div class="tab" background=transparent ng-init="var = 1">
-  <button ng-click="var = 1" >Recomendacion General</button>
-  <button ng-click="var = 2">Opciones de Grado</button>
-  <button ng-click="var = 3">Enfoque</button>
-  <button ng-click="var = 4">Informacion General</button>
-</div>
+  <input id="tab2" type="radio" name="tabs">
+  <label for="tab2">Grado</label>
 
-<div ng-if="var == 1">
-  <app-results-trecomendacion></app-results-trecomendacion>
-</div>
+  <input id="tab3" type="radio" name="tabs">
+  <label for="tab3">Enfoque</label>
 
-<div ng-if="var == 2">
-  <app-results-tgrado></app-results-tgrado>
-</div>
-
-<div ng-if="var == 3">
-  <app-results-tenfoque></app-results-tenfoque>
-</div>
-
-<div ng-if="var == 4">
-  <app-results-tinfo></app-results-tinfo>
+  <input id="tab4" type="radio" name="tabs">
+  <label for="tab4">Informacion</label>
+    <div class="content">
+      <div id="content1">
+        <app-results-trecomendacion></app-results-trecomendacion>
+			</div>
+      <div id="content2">
+         <app-results-tgrado></app-results-tgrado>
+			</div>
+      <div id="content3">
+        <app-results-tenfoque></app-results-tenfoque>
+			</div>
+      <div id="content4">
+        <app-results-tinfo></app-results-tinfo>
+			</div>
+    </div>
 </div>
