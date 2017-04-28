@@ -22,3 +22,4 @@ export class ResultsTinfoComponent implements OnInit {
 
   ngOnInit() {
   }
+}
