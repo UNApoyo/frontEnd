@@ -13,13 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { LogoComponent } from './logo/logo.component';
 import { HomeBIniciarComponent } from './home-biniciar/home-biniciar.component';
 import { HomeBodyComponent } from './home-body/home-body.component';
-import { HomeBotitleComponent } from './home-botitle/home-botitle.component';
-import { HomeBody1Component } from './home-body1/home-body1.component';
 import { FooterComponent } from './footer/footer.component';
-import { HomeBdes1Component } from './home-bdes1/home-bdes1.component';
-import { HomeBdes2Component } from './home-bdes2/home-bdes2.component';
-import { HomeBdes3Component } from './home-bdes3/home-bdes3.component';
-import { HomeBdes4Component } from './home-bdes4/home-bdes4.component';
 import { ContactDianaComponent } from './contact-diana/contact-diana.component';
 import { ContactAndresComponent } from './contact-andres/contact-andres.component';
 import { ContactSebastianComponent } from './contact-sebastian/contact-sebastian.component';
@@ -52,15 +46,6 @@ const appRoutes: Routes = [
 ];
 
 
-const appRoutes: Routes = [
-  { path: 'Home', component: HomeComponent},
-  { path: 'Contact', component: ContactenosComponent},
-  { path: 'Historia', component: HistoriaComponent},
-  { path: '', redirectTo: '/Home', pathMatch:'full'}
-
-];
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -71,13 +56,7 @@ const appRoutes: Routes = [
     LogoComponent,
     HomeBIniciarComponent,
     HomeBodyComponent,
-    HomeBotitleComponent,
-    HomeBody1Component,
     FooterComponent,
-    HomeBdes1Component,
-    HomeBdes2Component,
-    HomeBdes3Component,
-    HomeBdes4Component,
     ContactDianaComponent,
     ContactAndresComponent,
     ContactSebastianComponent,

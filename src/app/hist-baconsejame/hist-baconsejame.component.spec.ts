@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HistBaconsejameComponent } from './hist-baconsejame.component';
+
 
 describe('HistBaconsejameComponent', () => {
   let component: HistBaconsejameComponent;

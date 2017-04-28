@@ -13,4 +13,5 @@ export class HistBaconsejameComponent implements OnInit {
   ngOnInit() {
   }
 
+
 }
