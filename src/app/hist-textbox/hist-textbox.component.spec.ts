@@ -1,7 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-
-
 describe('HistTextboxComponent', () => {
   let component: HistTextboxComponent;
   let fixture: ComponentFixture<HistTextboxComponent>;

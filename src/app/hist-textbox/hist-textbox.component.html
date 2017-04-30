@@ -1,8 +1,9 @@
 <!-- Area de texto extensa -->
   <textarea id="t" [(ngModel)]="historiaText" placeholder="Ingresa tu historia académica aquí,
-  por ahora solo soporta en chrome, en otros navegadores puede no funcionar correctamente" name="texto"
+  se recomienda usar chrome o firefox, en otros navegadores puede no funcionar correctamente" name="texto"
             cols="100" rows="10"></textarea>
 
   <p>
-  	<a routerLink="/Results"  class="btn btn-primary btn-large" (click)="historializar()">Aconsejame</a>
+  	<a  class="btn btn-primary btn-large" (click)="historializar()">Aconsejame</a>
+    <!-- routerLink="/Results-->
   </p>
