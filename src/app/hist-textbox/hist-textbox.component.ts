@@ -17,7 +17,7 @@ export class HistTextboxComponent implements OnInit {
   }
   historiaText: string;
   historializar(){
-      console.log(new leerHistoria(this.historiaText));
+      console.log(leerHistoria(this.historiaText));
 
 
   }
