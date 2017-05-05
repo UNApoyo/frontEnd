@@ -7,6 +7,8 @@
 body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     background-size: 150%
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
 }
 
 .hero-spacer {

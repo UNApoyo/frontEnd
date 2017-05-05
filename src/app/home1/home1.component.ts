@@ -11,9 +11,8 @@ export class Home1Component implements OnInit {
 
   ngOnInit() {
   }
-  title = 'Un Apoyo';
   description1 = '¿Te sientes perdido?';
   description2 = '¿No sabes que rumbo tomar?';
   description3 = '¡¡Dejanos ayudarte!! UN Apoyo';
-  description4 = 'te ayudará a retomar tu rumbo'; 
+  description4 = 'te ayudará a retomar tu rumbo';
 }
