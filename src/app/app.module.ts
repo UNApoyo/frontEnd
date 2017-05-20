@@ -34,6 +34,7 @@ import { ResultsTrecomendacionComponent } from './results-trecomendacion/results
 import { ResultsTgradoComponent } from './results-tgrado/results-tgrado.component';
 import { ResultsTenfoqueComponent } from './results-tenfoque/results-tenfoque.component';
 import { ResultsTinfoComponent } from './results-tinfo/results-tinfo.component';
+import { ChartsModule } from "ng2-charts";
 
 
 const appRoutes: Routes = [
@@ -82,7 +83,8 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
