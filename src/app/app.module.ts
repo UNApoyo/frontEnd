@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from "@angular/router";
+import {Pipe, PipeTransform} from "@angular/core";
 
 
 import { AppComponent } from './app.component';

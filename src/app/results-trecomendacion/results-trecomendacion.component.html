@@ -1,3 +1,59 @@
-<h3>Recomendacion</h3>
-<h4>Tu porcentaje de carrera es: "porcentaje".</h4>
-<h4>Por ello y segun tu rendimiento te recomendamos:</h4>
+<h3>Información</h3>
+<h4>Tu promedio de materias según tipología es:</h4>
+
+<table class="grande">
+  <td class="t">
+    <table>
+      <dl>
+        <tr>
+          <th>Tipología</th>
+        </tr>
+        <tr *ngFor="let xx of promTipos?.tipologia">
+          <td >{{ xx }} </td>
+        </tr>
+      </dl>
+    </table>
+  </td>
+  <td class="t">
+    <table>
+      <dl>
+        <tr>
+          <th>Promedio</th>
+        </tr>
+        <tr *ngFor="let yy of promTipos?.promedio">
+         <td>{{ yy }}</td>
+        </tr>
+      </dl>
+    </table>
+  </td>
+</table>
+
+
+<h4>Tu promedio de materias según área es:</h4>
+
+<table class="grande">
+  <td class="t">
+    <table>
+      <dl>
+        <tr>
+          <th>Area</th>
+        </tr>
+        <tr *ngFor="let x of promAreas?.nombre">
+          <td >{{ x }} </td>
+        </tr>
+      </dl>
+    </table>
+  </td>
+  <td class="t">
+    <table>
+      <dl>
+        <tr>
+          <th>Promedio</th>
+        </tr>
+        <tr *ngFor="let y of promAreas?.promedio">
+         <td>{{ y }}</td>
+        </tr>
+      </dl>
+    </table>
+  </td>
+</table>

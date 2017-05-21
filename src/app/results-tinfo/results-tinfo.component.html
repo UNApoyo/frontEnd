@@ -1,5 +1,35 @@
 <h3>Información</h3>
-<h4>Informacion detallada de que promedio de fundamentacion, disciplinar y electivas lleva, ademas estadisticas de rendimiento.</h4>
+<h4>Tu porcentaje de avance según tipología es:</h4>
+
+<table class="grande">
+  <td class="t">
+    <table>
+      <dl>
+        <tr>
+          <th>Tipología</th>
+        </tr>
+        <tr *ngFor="let xx of porTipos?.tipologia">
+          <td >{{ xx }} </td>
+        </tr>
+      </dl>
+    </table>
+  </td>
+  <td class="t">
+    <table>
+      <dl>
+        <tr>
+          <th>Porcentaje %</th>
+        </tr>
+        <tr *ngFor="let yy of porTipos?.porcentaje">
+         <td>{{ yy }}</td>
+        </tr>
+      </dl>
+    </table>
+  </td>
+</table>
+
+
+<h4>Tu porcentaje de avance según área es:</h4>
 
 <table class="grande">
   <td class="t">
@@ -18,10 +48,10 @@
     <table>
       <dl>
         <tr>
-          <th>Porcentaje</th>
+          <th>Porcentaje %</th>
         </tr>
         <tr *ngFor="let y of promAreas?.porcentaje">
-         <td>{{ y }}</td>
+         <td>{{ y}}</td>
         </tr>
       </dl>
     </table>
