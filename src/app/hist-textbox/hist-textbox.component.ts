@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import '../../js/leeHistoria.js';
+import { HttpModule } from '@angular/http';
 
 
 declare var leerHistoria: any;

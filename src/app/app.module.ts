@@ -78,13 +78,15 @@ const appRoutes: Routes = [
     ResultsTrecomendacionComponent,
     ResultsTgradoComponent,
     ResultsTenfoqueComponent,
-    ResultsTinfoComponent
+    ResultsTinfoComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     RouterModule.forRoot(appRoutes),
+    BrowserModule,
+	  HttpModule,
     ChartsModule
   ],
   providers: [],
