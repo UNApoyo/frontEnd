@@ -1,21 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import { Http } from "@angular/http";
 
+
 @Component({
   selector: 'app-results-tinfo',
   templateUrl: './results-tinfo.component.html',
-  styleUrls: ['./results-tinfo.component.css']
+  styleUrls: ['./results-tinfo.component.css'],
 })
+
+
 export class ResultsTinfoComponent implements OnInit {
-  tipo1 = "Matematicas";
-  tipologias1;
-  tipo2 = "Probabilidad y Estadistica";
-  tipologias2;
+
+  promAreas;
+  porTipos;
   constructor(private http: Http) {
-    http.get('http://localhost:3000/asignaturas/porcentaje_area/1/1/1.json')
-      .subscribe(res => this.tipologias1 = res.json());
-    http.get('http://localhost:3000/asignaturas/porcentaje_area/1/1/2.json')
-      .subscribe(res => this.tipologias2 = res.json());
+    http.get('http://localhost:3000/areas/porcentajes?estudiante_id=1&carrera_id=1&sort=-porcentajes')
+      .subscribe(res => this.promAreas = res.json());
+
+    http.get('http://localhost:3000/asignaturas/porcentaje?carrera_id=1&estudiante_id=1&sort=tipologia')
+      .subscribe(res => this.porTipos = res.json());
   }
 
 

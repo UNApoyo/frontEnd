@@ -40,6 +40,7 @@ import { ResultsTrecomendacionComponent } from './results-trecomendacion/results
 import { ResultsTgradoComponent } from './results-tgrado/results-tgrado.component';
 import { ResultsTenfoqueComponent } from './results-tenfoque/results-tenfoque.component';
 import { ResultsTinfoComponent } from './results-tinfo/results-tinfo.component';
+import { ResultsGraphComponent } from './results-graph/results-graph.component';
 
 
 const appRoutes: Routes = [
@@ -88,7 +89,8 @@ const appRoutes: Routes = [
     ResultsTrecomendacionComponent,
     ResultsTgradoComponent,
     ResultsTenfoqueComponent,
-    ResultsTinfoComponent
+    ResultsTinfoComponent,
+    ResultsGraphComponent
   ],
   imports: [
     BrowserModule,

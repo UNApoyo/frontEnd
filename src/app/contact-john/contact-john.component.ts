@@ -12,5 +12,5 @@ export class ContactJohnComponent implements OnInit {
   ngOnInit() {
   }
   nombre = "John Hernandez";
-  correo = "joahernandezca@unale.edu.co";
+  correo = "joahernandezca@unal.edu.co";
 }
