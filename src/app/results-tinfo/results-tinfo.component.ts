@@ -19,6 +19,8 @@ export class ResultsTinfoComponent implements OnInit {
 
     http.get('http://localhost:3000/asignaturas/porcentaje?carrera_id=1&estudiante_id=1&sort=tipologia')
       .subscribe(res => this.porTipos = res.json());
+
+    
   }
 
 
