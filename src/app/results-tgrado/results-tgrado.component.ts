@@ -12,7 +12,7 @@ export class ResultsTgradoComponent implements OnInit {
   constructor(private http: Http) {
   http.get('http://localhost:3000/historia_academicas/sugerencia_grado?estudiante_id=1&carrera_id=1')
     .subscribe(res => this.recom = res.json());
-
+    
   }
 
   ngOnInit() {

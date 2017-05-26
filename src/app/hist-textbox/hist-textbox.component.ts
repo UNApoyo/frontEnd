@@ -24,7 +24,7 @@ export class HistTextboxComponent implements OnInit {
   historializar(){
     var headers=new Headers({'Content-Type':'application/json'});
     let options=new RequestOptions({headers:headers});
-    this.envio= JSON.stringify({"estudiante": this.historiaText});
+    this.envio= JSON.stringify({"text": this.historiaText});
     this.http.post('http://localhost:3000/estudiantes/leer_historia',this.envio,options)
       .subscribe((res: any)=>{
       this.data=res.json();

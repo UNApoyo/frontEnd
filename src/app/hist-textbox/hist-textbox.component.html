@@ -4,6 +4,20 @@
             cols="100" rows="10"></textarea>
 
   <p>
-  	<a  class="btn btn-primary btn-large" (click)="historializar()">Aconsejame</a>
-    <routerLink="/Results">
+  	<a  class="btn btn-primary btn-large" (click)="historializar()" routerLink="/Results">Aconsejame</a>
+
   </p>
+
+<!--script>
+document.getElementById("algo").onclick = function() {myFunction()};
+
+  function myFunction(){
+    var url='/estudiantes/leer_historia';
+    console.log("wachu");
+    $.ajax({
+      type:"POST",
+      url:url,
+      data:{params:historiatext}
+    })};
+
+</script-->
